@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #f2f6fa;
+        margin: 0;
+        background-image: url("https://www.petalrepublic.com/wp-content/uploads/2022/03/Dahlia-Flower-Uses-Benefits-and-Interesting-Facts.jpeg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        opacity: 0.9;
+        background-attachment: scroll;
+      }
+      h1 {
+        text-align: center;
+        font-size: 42px;
+        padding: 20px;
+      }
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        line-height: 48px;
+      }
+
+      .container {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+      }
+      .wrapper {
+        padding: 20px;
+      }
+
+      nav {
+        margin-top: 30px;
+        padding: 20px;
+      }
+      ul {
+        list-style: none;
+        margin: 0 auto;
+        border: 10px;
+        text-align: end;
+      }
+      li {
+        display: inline;
+        margin: 20px;
+      }
+      em {
+        font-weight: 600;
+        font-size: 32px;
+      }
+
+      a {
+        color: #f2f6fa;
+        text-decoration: none;
+        font-weight: 600;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+      }
+      a:hover {
+        color: white;
+        background-color: #885df1;
+        cursor: pointer;
+        opacity: 0.7;
+      }
+      p {
+        color: black;
+        background-image: linear-gradient(
+          to right,
+          #6a82fb,
+          #fc5c7d,
+          #fffbd5,
+          #885df1
+        );
+        opacity: 0.8;
+        line-height: 50px;
+        padding: 30px;
+        font-size: 20px;
+        line-height: 22px;
+        padding: 30px;
+        border: 20px;
+        border-radius: 5px;
+        /* position: absolute; */
+        margin: 30px auto;
+        text-align: center;
+      }
+      img {
+        display: block;
+        width: 120px;
+        margin: 0 0 0 auto;
+      }
+      button {
+        box-shadow: rgba(27, 32, 202, 0.08) 0px 8px 8px 0;
+        display: block;
+        margin: 10px auto;
+        border: 1px solid #1a64d6;
+        background-color: #885df1;
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+      button:hover {
+        color: white;
+        background: #1a64d6;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#">Dahlias</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </nav>
+      <div class="wrapper">
+        <h1><span>🦋</span>Kristina Flower Farm</h1>
+        <h2>
+          Where flowers are work of <strong><em>art</em></strong
+          >.
+        </h2>
+        <hr />
+
+        <p>
+          Come and stroll our farm and enjoy the beauty of nature turned art.
+        </p>
+        <br />
+        <img
+          src="https://www.seekpng.com/png/full/37-371969_go-to-image-blue-heart-png-transparent.png"
+          alt="Blue heart"
+        />
+        <button>Contact us</button>
+      </div>
+    </div>
+    <script>
+      function visitUs() {
+        let flowers = prompt("Do you love dahlias?");
+        flowers = flowers.toLocaleLowerCase();
+        flowers = flowers.trim();
+        flowers = flowers.replace("yes");
+        if (flowers === "no" || flowers === "No") {
+          alert("You will learn to love them.");
+        } else {
+          alert("Continue");
+        }
+
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let p = document.querySelector("p");
+        p.innerHTML =
+          "<h2><strong> Hello," +
+          name +
+          "👋.  We will keep in touch in </strong></h2>" +
+          email;
+      }
+
+      let visit = document.querySelector("button");
+      visit.addEventListener("click", visitUs);
+    </script>
+  </body>
+</html>
