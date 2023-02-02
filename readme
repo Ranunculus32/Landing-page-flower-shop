@@ -1,2 +1,3 @@
 This is a final project for Shecodes Basic course. It is a landing page of a flower farm.
 This is using an inline styling method wherein the css is inside the <style> tag.
+There is an added JS interactivity called DOM manipulation: changing HTML elements in response to the data received in the input field
